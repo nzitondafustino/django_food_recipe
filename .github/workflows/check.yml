@@ -22,10 +22,10 @@ jobs:
 
             - name: test
               run: |
-                docker-compose run --rm app sh -c "python manage.py test"
+                docker compose run --rm app sh -c "python manage.py test"
             
             - name: lint
               run: |
-                docker-compose run --rm app sh -c "python flake8"
+                docker compose run --rm app sh -c "python flake8"
 
             
